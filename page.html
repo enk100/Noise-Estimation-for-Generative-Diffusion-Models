@@ -1,0 +1,191 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Noise Estimation For Generative Diffusion Models</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./page_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./page_files/scrolling-nav.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+
+
+    <header class="bg-dark text-white">
+      <div class="container text-center">
+        <h1>Noise Estimation For Denoising Diffusion Models</h1>
+      </div>
+    </header>
+
+    <br>  <br>
+
+
+
+
+
+
+    </p></div></div></div></section>
+
+
+
+    <section id="samples" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-13 mx-auto">
+
+
+            <p class="lead" align="justify">
+                Here are some samples from our model for you to listen:
+                </p><ul class="lead" align="justify">
+                  <li>Ground Truth - original sample from LJ dataset</li>
+                  <li>Ours - Generated with 6 denoising steps using our proposed method</li>
+                  <li>WaveGrad - sample generated with network and noise schedule (grid search) for 6 denosing steps provided in the Git </li>
+                </ul>
+            <p></p>
+
+
+              <br>  <br>
+
+
+              <center>
+              <h3>LJ Speech samples</h3>
+              <p></p>
+              <p></p>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Ground Truth</th>
+                    <th>Ours</th>
+                    <th>WaveGrad</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="border-top:1px solid black">
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/GroundTruth/GT3.wav" type="audio/wav"></audio></td>
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/Ours/our3.wav" type="audio/wav"></audio></td>
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/Wavegrad/WG3.wav" type="audio/wav"></audio></td>
+                  </tr>
+                  <tr style="border-top:1px solid black">
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/GroundTruth/GT2.wav" type="audio/wav"></audio></td>
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/Ours/our2.wav" type="audio/wav"></audio></td>
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/Wavegrad/WG2.wav" type="audio/wav"></audio></td>
+                  </tr>
+                  <tr style="border-top:1px solid black">
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/GroundTruth/GT_1.wav" type="audio/wav"></audio></td>
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/Ours/our1.wav" type="audio/wav"></audio></td>
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/Wavegrad/WG1.wav" type="audio/wav"></audio></td>
+                  </tr>
+                  <tr style="border-top:1px solid black">
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/GroundTruth/GT4.wav" type="audio/wav"></audio></td>
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/Ours/our4.wav" type="audio/wav"></audio></td>
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/Wavegrad/WG4.wav" type="audio/wav"></audio></td>
+                  </tr>
+                  <tr style="border-top:1px solid black">
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/GroundTruth/GT5.wav" type="audio/wav"></audio></td>
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/Ours/our5.wav" type="audio/wav"></audio></td>
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/Wavegrad/WG5.wav" type="audio/wav"></audio></td>
+                  </tr>
+                  <tr style="border-top:1px solid black">
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/GroundTruth/GT6.wav" type="audio/wav"></audio></td>
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/Ours/our6.wav" type="audio/wav"></audio></td>
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/Wavegrad/WG6.wav" type="audio/wav"></audio></td>
+                  </tr>
+                  <tr style="border-top:1px solid black">
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/GroundTruth/GT7.wav" type="audio/wav"></audio></td>
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/Ours/our7.wav" type="audio/wav"></audio></td>
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/Wavegrad/WG7.wav" type="audio/wav"></audio></td>
+                  </tr>
+                  <tr style="border-top:1px solid black">
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/GroundTruth/GT8.wav" type="audio/wav"></audio></td>
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/Ours/our8.wav" type="audio/wav"></audio></td>
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/Wavegrad/WG8.wav" type="audio/wav"></audio></td>
+                  </tr>
+                  <tr style="border-top:1px solid black">
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/GroundTruth/GT9.wav" type="audio/wav"></audio></td>
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/Ours/our9.wav" type="audio/wav"></audio></td>
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/Wavegrad/WG9.wav" type="audio/wav"></audio></td>
+                  </tr>
+                  <tr style="border-top:1px solid black">
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/GroundTruth/GT10.wav" type="audio/wav"></audio></td>
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/Ours/our10.wav" type="audio/wav"></audio></td>
+                    <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                        <source src="src/samples/Wavegrad/WG10.wav" type="audio/wav"></audio></td>
+                  </tr>
+
+                </tbody>
+              </table>
+
+              <br>  <br>
+
+              <br>  <br>
+
+                          <br>  <br>
+
+
+			</center>
+          </center></center></center></div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <!-- <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p> -->
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="./page_files/jquery.min.js"></script>
+    <script src="./page_files/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="./page_files/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="./page_files/scrolling-nav.js"></script>
+
+
+
+</body></html>
